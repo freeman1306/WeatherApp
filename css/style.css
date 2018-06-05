@@ -13,7 +13,6 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  height: 954px;
 }
 
 header .navbar {
@@ -156,7 +155,11 @@ header .h_right .balls li:nth-child(4) span {
   font-weight: bold;
 }
 
-header .down {
+header .wrapper {
+  text-align: center;
+}
+
+header .wrapper .down {
   background-image: url("../img/Shape 1 copy.png");
   background-repeat: no-repeat;
   border: none;
@@ -165,7 +168,7 @@ header .down {
   background-position: center;
   width: 54px;
   height: 53px;
-  margin: 4rem 0 0rem 31rem;
+  margin-top: 4rem;
 }
 
 #features .main_head {
@@ -186,6 +189,22 @@ header .down {
 #features .features .item p {
   color: #b3b3b3;
   font-size: 16px;
+}
+
+#features .slider button {
+  border: none;
+  background-color: transparent;
+}
+
+#features .slider .slick-current {
+  background-color: transparent;
+}
+
+#features .slider .slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  width: 44%;
 }
 
 #features .f1:before {
@@ -371,7 +390,6 @@ header .down {
 
 #download_app {
   background: #648cff;
-  height: 460px;
 }
 
 #download_app .how {
@@ -397,18 +415,13 @@ header .down {
   margin-right: 10px;
 }
 
-#download_app .how_phones .img {
+#download_app .how_phones img {
   margin-top: 4rem;
   width: 100%;
   height: 25rem;
-  background-image: url(../img/phone\ image.png);
-  background-size: cover;
-  background-position: 0 2rem;
-  background-repeat: no-repeat;
 }
 
 footer {
-  height: 370px;
   background: #353854;
 }
 
@@ -426,6 +439,15 @@ footer .f_nav {
 footer .f_nav a {
   text-decoration: none;
   color: #b3b3b3;
+}
+
+footer hr {
+  color: #b3b3b3;
+}
+
+footer .rights {
+  color: #888686;
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

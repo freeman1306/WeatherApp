@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="slick-slider/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <title>WeatherApp</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row navbar">
 
-                <div class="col-md-3">
-                    <span class="logo">FUN WEATHER.</span>
+                <div class="col-lg-3 col-md-2">
+                    <div class="logo">FUN WEATHER.
+                    </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-7">
                     <ul class="nav">
                         <li class="active">
                             <a href="#">Home</a>
@@ -40,51 +41,64 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-lg-2 col-md-3 d-flex justify-content-around social">
+                    <a href="">
+                        <img src="img/social/facebook.png" alt="picture">
+                    </a>
+                    <a href="">
+                        <img src="img/social/instagram.png" alt="picture">
+                    </a>
+                    <a href="">
+                        <img src="img/social/twitter.png" alt="picture">
+                    </a>
+                </div>
             </div>
 
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="h_left">
-                        <h1 class="tagline">Get the most fun
-                            <br>weather app</h1>
-                        <p>Simple, nice and user-friendly application of the
-                            <br> weather. Only useful information</p>
-                        <div class="buttons">
-                            <div class="button_1">
-                                <a href="#">Download</a>
-                            </div>
-                            <div class="button_2">
-                                <a href="#">Features</a>
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="h_left">
+                            <h1 class="tagline">Get the most fun
+                                <br>weather app</h1>
+                            <p>Simple, nice and user-friendly application of the
+                                <br> weather. Only useful information</p>
+                            <div class="buttons">
+                                <div class="button_1">
+                                    <a href="#">Download</a>
+                                </div>
+                                <div class="button_2">
+                                    <a href="#">Features</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="h_right">
-                        <img src="./img/phone.png" alt="picture">
-                        <ul class="balls">
-                            <li class="ball_1">
-                                <span>9˚</span>
-                            </li>
-                            <li class="ball_2">
-                                <span>LONDON</span>
-                            </li>
-                            <li class="ball_3">
-                                <span>SUNNY</span>
-                            </li>
-                            <li class="ball_4">
-                                <span>RIO</span>
-                            </li>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="h_right">
+                            <img src="./img/phone.png" alt="picture">
+                            <ul class="balls">
+                                <li class="ball_1">
+                                    <span>9˚</span>
+                                </li>
+                                <li class="ball_2">
+                                    <span>LONDON</span>
+                                </li>
+                                <li class="ball_3">
+                                    <span>SUNNY</span>
+                                </li>
+                                <li class="ball_4">
+                                    <span>RIO</span>
+                                </li>
 
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="wrapper">
+                    <button class="down">
+                        <a href="#features"></a>
+                    </button>
+                </div>
             </div>
-            <button class="down">
-                <a href="#features"></a>
-            </button>
         </div>
 
     </header>
@@ -98,7 +112,7 @@
 
             <div class="features">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="item f1">
                             <h5>Usability</h5>
                             <p> Sometimes the simplest things are the hardest to find. So we created a new line for everyday
@@ -106,7 +120,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="item f2">
                             <h5>Parallax Effect</h5>
                             <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday
@@ -114,7 +128,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="item f3">
                             <h5>Unlimites Colors</h5>
                             <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday
@@ -128,17 +142,24 @@
                     <span>Drag and Drop</span>
                 </div>
 
+
                 <div class="slider">
-                    <div>
-                        <img src="" alt="picture">
+                    <div class="slide">
+                        <img src="img/slider/image left.png" alt="picture">
+
                     </div>
-                    <div>
-                        <img src="" alt="picture">
+                    <div class="slide">
+                        <img src="img/slider/image center.png" alt="picture">
+
                     </div>
-                    <div>
-                        <img src="" alt="picture">
+                    <div class="slide">
+                        <img src="img/slider/image right.png" alt="picture">
+
                     </div>
+
                 </div>
+
+
 
 
                 <div class="screenshots">
@@ -151,7 +172,7 @@
 
                     <div class="screen">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 ">
                                 <div class="left">
                                     <img class="bg_img" src="./img/Cloudy.png " alt="picture">
                                     <img class="phone" src="./img/SCREEN.png" alt="picture">
@@ -161,7 +182,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="right">
                                     <img src="./img/cloud.png" alt="picture">
 
@@ -193,7 +214,7 @@
 
                     <div class="screen screen2">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="right">
                                     <div class="sun"></div>
 
@@ -217,8 +238,8 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-5 offset-md-1">
-                                <div class="left ">
+                            <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1">
+                                <div class="left inversed">
                                     <img class="bg_img" src="./img/Sunny.png " alt="picture">
                                     <img class="phone" src="./img/SCREEN1.png" alt="picture">
                                     <div class="bubbles">
@@ -236,7 +257,7 @@
 
                     <div class="screen">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="left">
                                     <img class="bg_img" src="./img/Rainy.png " alt="picture">
                                     <img class="phone" src="./img/SCREEN2.png" alt="picture">
@@ -246,7 +267,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="right">
                                     <img src="./img/rain.png" alt="picture">
 
@@ -283,7 +304,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="quote_right">
                         <div class="quote_1">
                             <img src="img/bracket.png" alt="picture">
@@ -300,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="quote_left">
                         <div class="quote_1">
                             <img src="img/bracket.png" alt="picture">
@@ -324,7 +345,7 @@
     <section id="download_app">
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-5 col-sm-5">
                     <div class="how">
                         <h3>HOW DOWNLOAD THE APP?</h3>
                         <p>Just download the app from the store. Simple, nice and user-friendly application of theweather. Only
@@ -344,9 +365,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-7 col-sm-7">
                     <div class="how_phones">
-                        <div class="img"></div>
+
+                        <img src="img/phone image.png" alt="picture">
+
                     </div>
                 </div>
             </div>
@@ -356,11 +379,11 @@
         <div class="container">
             <div class="row f_navbar">
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-12 text-center">
                     <img src="img/Fun Weather..png" alt="picture">
                 </div>
-                <div class="col-md-8">
-                    <ul class="f_nav">
+                <div class="col-lg-8 col-md-12">
+                    <ul class="f_nav" id="f_nav">
                         <li>
                             <a class="active" href="#">Home</a>
                         </li>
@@ -375,19 +398,49 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-lg-2 col-md-12 d-flex justify-content-around text-center social">
+                    <a href="">
+                        <img src="img/social/facebook.png" alt="picture">
+                    </a>
+                    <a href="">
+                        <img src="img/social/instagram.png" alt="picture">
+                    </a>
+                    <a href="">
+                        <img src="img/social/twitter.png" alt="picture">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="rights text-right">
+                    © 2016 All rights reserved. Weather App Theme by Gravpix
+
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="go_top mt-4" id="go_top">
+                    <a href="#header">
+                        <img src="img/go top.png" alt="picture">
+                    </a>
+                </div>
+
             </div>
         </div>
     </footer>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+
+    <script src="slick-slider/main.js"></script>
+
+
+
+
     <!-- <script type="text/javascript" src="slick/slide.min.js"></script> -->
 </body>
 
