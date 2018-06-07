@@ -124,3 +124,19 @@
         justify-content: center !important;
     }
 }
+
+@media screen and (max-width: 320px) {
+    #features .left {
+        margin: 0 auto;
+        height: 34em;
+        margin-top: -12em;
+    }
+    #features .slider .slick-current img {
+        width: 100%;
+    }
+    #features .slider button img {
+        width: 26px;
+        height: auto;
+        padding: 0px;
+    }
+}
