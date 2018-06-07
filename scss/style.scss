@@ -1,3 +1,17 @@
+@media screen and (max-width: 416px) {
+    header .h_right .balls li {
+        &:nth-child(1) {
+            left: 17rem !important;
+        }
+        &:nth-child(2) {
+            left: 17rem !important;
+        }
+        &:nth-child(4) {
+            left: 16rem !important;
+        }
+    }
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
     h3 {
