@@ -130,6 +130,10 @@ header {
       width: 54px;
       height: 53px;
       margin-top: 4rem; }
+      header .wrapper .down a {
+        width: 42px;
+        height: 47px;
+        display: block; }
 
 #features .main_head {
   text-align: center;
