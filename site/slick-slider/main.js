@@ -39,7 +39,7 @@ $(".slider").slick({
 
 
 $(document).ready(function () {
-  $("#go_top, #f_nav, #down").on("click", "a", function (event) {
+  $("#go_top, #f_nav, #down, #main").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;

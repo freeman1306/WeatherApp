@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media_queries.css">
+
     <link rel="stylesheet" type="text/css" media="screen" href="slick-slider/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
 
@@ -27,79 +27,66 @@
 </head>
 
 <body>
-    <header id="header">
+    <div class="main" id="main">
         <div class="container">
-            <div class="row navbar">
+            <header>
 
-                <div class="col-lg-3 col-md-2">
-                    <div class="logo">FUN WEATHER.
+                <div class="row navbar">
+
+                    <div class="col-lg-3 col-md-3 text-center col-sm-12">
+                        <div class="logo">FUN WEATHER.
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-7 col-md-7">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a href="#reviews">Reviews</a>
-                        </li>
-                        <li>
-                            <a href="#download_app">Download</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-3 d-flex justify-content-around social">
-                    <a href="">
-                        <img src="img/social/facebook.png" alt="picture">
-                    </a>
-                    <a href="">
-                        <img src="img/social/instagram.png" alt="picture">
-                    </a>
-                    <a href="">
-                        <img src="img/social/twitter.png" alt="picture">
-                    </a>
-                </div>
-            </div>
+                    <div class="col-lg-7 col-md-6 col-sm-12 p-4">
+                        <ul class="nav  flex-wrap">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#download_app">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-12 mx-auto mt-sm-3 d-flex justify-content-around social">
+                        <a href="">
+                            <img src="img/social/facebook.png" alt="picture">
+                        </a>
+                        <a href="">
+                            <img src="img/social/instagram.png" alt="picture">
+                        </a>
+                        <a href="">
+                            <img src="img/social/twitter.png" alt="picture">
+                        </a>
+                    </div>
+
+            </header>
 
             <div class="content">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="h_left">
-                            <h1 class="tagline">Get the most fun
-                                <br>weather app</h1>
-                            <p>Simple, nice and user-friendly application of the
-                                <br> weather. Only useful information</p>
-                            <div class="buttons">
-                                <div class="button_1">
-                                    <a href="#">Download</a>
-                                </div>
-                                <div class="button_2">
-                                    <a href="#">Features</a>
-                                </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center  text-md-left mb-5">
+                        <div class="m_left mx-auto">
+                            <h1 class="tagline">Get the most fun weather app</h1>
+                            <p>Simple, nice and user-friendly application of the weather. Only useful information</p>
+                            <div class="buttons mx-auto d-inline-flex flex-wrap">
+
+                                <a class="button_1 mr-sm-2 mx-auto" href="#">Download</a>
+
+
+                                <a class="button_2 mx-auto" href="#">Features</a>
+
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="h_right">
-                            <img src="./img/phone.png" alt="picture">
-                            <ul class="balls">
-                                <li class="ball_1">
-                                    <span>9˚</span>
-                                </li>
-                                <li class="ball_2">
-                                    <span>LONDON</span>
-                                </li>
-                                <li class="ball_3">
-                                    <span>SUNNY</span>
-                                </li>
-                                <li class="ball_4">
-                                    <span>RIO</span>
-                                </li>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="m_right">
+                            <img src="./img/phone_main.png" alt="picture">
 
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -109,9 +96,10 @@
                     </button>
                 </div>
             </div>
+            </div>
         </div>
 
-    </header>
+    </div>
     <section id="features">
         <div class="container">
             <div class="main_head">
@@ -123,7 +111,7 @@
             <div class="features">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="item f1">
+                        <div class="item f1 mb-5">
                             <h5>Usability</h5>
                             <p> Sometimes the simplest things are the hardest to find. So we created a new line for everyday
                                 life
@@ -131,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="item f2">
+                        <div class="item f2 mb-5">
                             <h5>Parallax Effect</h5>
                             <p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday
                                 life
@@ -182,36 +170,22 @@
 
                     <div class="screen">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 ">
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
                                 <div class="left">
-                                    <img class="bg_img" src="./img/Cloudy.png " alt="picture">
+
                                     <img class="phone" src="./img/SCREEN.png" alt="picture">
-                                    <div class="bubbles">
-                                        <span class="bubble_1">Cloudy</span>
-                                        <span class="bubble_2">15˚</span>
-                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="right">
                                     <img src="./img/cloud.png" alt="picture">
 
                                     <div class="screen_desc">
                                         <h3>WHEN THE CLOUDS</h3>
                                         <p>Variable information on the air humidity, the feeling of the weather, and the ability
-                                            to
-                                            <br> share this with your friends</p>
-                                        <div class="circles">
-                                            <div class="circle">
-                                                95˚
-                                            </div>
-                                            <div class="circle">
-                                                9˚
-                                            </div>
-                                            <div class="circle">
-                                                Rainy
-                                            </div>
-                                        </div>
+                                            to share this with your friends</p>
+
                                     </div>
                                 </div>
 
@@ -229,17 +203,14 @@
 
                     <div class="screen">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="left">
-                                    <img class="bg_img" src="./img/Sunny.png " alt="picture">
+
                                     <img class="phone" src="./img/SCREEN1.png" alt="picture">
-                                    <div class="bubbles">
-                                        <span class="bubble_1">Sunny</span>
-                                        <span class="bubble_2">35˚</span>
-                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="right">
                                     <img src="./img/rain.png" alt="picture">
 
@@ -247,17 +218,7 @@
                                         <h3>WHEN THE SUN</h3>
                                         <p>Sometimes the simplest things are the hardest to find. So we created a new line for
                                             everyday life.</p>
-                                        <div class="circles">
-                                            <div class="circle">
-                                                95˚
-                                            </div>
-                                            <div class="circle">
-                                                9˚
-                                            </div>
-                                            <div class="circle">
-                                                Rainy
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -267,36 +228,22 @@
 
                     <div class="screen">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="left">
-                                    <img class="bg_img" src="./img/Rainy.png " alt="picture">
+
                                     <img class="phone" src="./img/SCREEN2.png" alt="picture">
-                                    <div class="bubbles">
-                                        <span class="bubble_1">Rainy</span>
-                                        <span class="bubble_2">9˚</span>
-                                    </div>
+
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="right">
                                     <img src="./img/rain.png" alt="picture">
 
                                     <div class="screen_desc">
                                         <h3>WHEN THE CLOUDS</h3>
                                         <p>Variable information on the air humidity, the feeling of the weather, and the ability
-                                            to
-                                            <br> share this with your friends</p>
-                                        <div class="circles">
-                                            <div class="circle">
-                                                95˚
-                                            </div>
-                                            <div class="circle">
-                                                9˚
-                                            </div>
-                                            <div class="circle">
-                                                Rainy
-                                            </div>
-                                        </div>
+                                            to share this with your friends</p>
+
                                     </div>
                                 </div>
                             </div>
@@ -355,33 +302,27 @@
     <section id="download_app">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-5">
+                <div class="col-lg-5 col-md-7 col-sm-12">
                     <div class="how">
                         <h3>HOW DOWNLOAD THE APP?</h3>
                         <p>Just download the app from the store. Simple, nice and user-friendly application of theweather. Only
                             relevant and useful information.</p>
 
-                        <div class="buttons">
-                            <div class="button_1">
-                                <a href="#">
-                                    <img src="img/appstore.png" alt="">
-                                </a>
-                            </div>
-                            <div class="button_2">
-                                <a href="#">
-                                    <img src="img/google play.png" alt="picture">
-                                </a>
-                            </div>
+                        <div class="buttons ">
+
+                            <a class="button_1 mx-auto" href="#">
+                                <img src="img/appstore.png" alt="">
+                            </a>
+
+
+                            <a class="button_2" href="#">
+                                <img src="img/google play.png" alt="picture">
+                            </a>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-7">
-                    <div class="how_phones">
 
-                        <img src="img/phone image.png" alt="picture">
-
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -392,8 +333,8 @@
                 <div class="col-lg-2 col-md-12 text-center">
                     <img src="img/Fun Weather..png" alt="picture">
                 </div>
-                <div class="col-lg-8 col-md-12">
-                    <ul class="f_nav" id="f_nav">
+                <div class="col-lg-8 col-md-12 p-5 p-lg-0">
+                    <ul class="f_nav  flex-wrap" id="f_nav">
                         <li>
                             <a class="active" href="#">Home</a>
                         </li>
@@ -408,7 +349,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-12 d-flex justify-content-around text-center social">
+                <div class="col-lg-2 col-md-12 d-flex  mx-auto justify-content-around text-center social">
                     <a href="">
                         <img src="img/social/facebook.png" alt="picture">
                     </a>

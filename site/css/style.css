@@ -1,10 +1,3 @@
-@media screen and (max-width: 416px) {
-  header .h_right .balls li:nth-child(1) {
-    left: 17rem !important; }
-  header .h_right .balls li:nth-child(2) {
-    left: 17rem !important; }
-  header .h_right .balls li:nth-child(4) {
-    left: 16rem !important; } }
 body {
   font-family: 'Ubuntu', sans-serif; }
   body h3 {
@@ -15,112 +8,61 @@ body {
   body :focus {
     outline: 0;
     outline-offset: 0; }
+  body .social {
+    max-width: 12em; }
 
-header {
+.main {
   color: #fff;
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover; }
-  header .navbar {
+  .main .navbar {
     padding-top: 30px;
     margin-bottom: 100px; }
-    header .navbar .logo {
+    .main .navbar .logo {
       font-weight: bold;
       font-size: 24px; }
-  header .nav {
+  .main .nav {
     justify-content: space-around; }
-    header .nav a {
+    .main .nav li {
+      margin-right: 1em; }
+    .main .nav a {
       text-decoration: none;
       color: #d5d5d5; }
-    header .nav a .active {
+    .main .nav a .active {
       color: #fff; }
-  header .tagline {
-    font-weight: bold;
-    font-size: 60px;
-    padding-top: 67px; }
-  header .buttons {
+  .main .m_left {
+    max-width: 25em; }
+    .main .m_left .tagline {
+      padding-top: 2em;
+      padding-bottom: 1em;
+      font-weight: bold; }
+  .main .buttons {
     display: flex; }
-    header .buttons .button_1,
-    header .buttons .button_2 {
-      width: 158px;
-      height: 52px;
-      line-height: 48px;
+    .main .buttons .button_1,
+    .main .buttons .button_2 {
+      width: 9em;
+      height: 3em;
+      line-height: 3em;
       text-align: center;
       border-radius: 5px;
       margin-top: 46px; }
-    header .buttons a {
+    .main .buttons a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px; }
-    header .buttons .button_1 {
+    .main .buttons .button_1 {
       margin-right: 12px;
       background: #fc6a42; }
-    header .buttons .button_2 {
+    .main .buttons .button_2 {
       background: #4466c9; }
-  header .h_right {
+  .main .m_right img {
+    width: 100%; }
+  .main .wrapper {
     text-align: center; }
-    header .h_right img {
-      position: relative; }
-    header .h_right .balls li {
-      position: absolute;
-      border-radius: 100%;
-      list-style: none; }
-    header .h_right .balls li:nth-child(1) {
-      background-color: #fff;
-      width: 58px;
-      height: 58px;
-      top: 7rem;
-      left: 30rem;
-      color: #6ca3ff; }
-      header .h_right .balls li:nth-child(1) span {
-        position: absolute;
-        top: 22%;
-        left: 41%;
-        font-size: 20px; }
-    header .h_right .balls li:nth-child(2) {
-      background-color: #4466c9;
-      width: 90px;
-      height: 90px;
-      top: 20rem;
-      left: 33rem;
-      color: #fff; }
-      header .h_right .balls li:nth-child(2) span {
-        position: absolute;
-        top: 35%;
-        left: 14%;
-        font-size: 16px;
-        font-weight: bold; }
-    header .h_right .balls li:nth-child(3) {
-      background-color: #fc6a42;
-      width: 100px;
-      height: 100px;
-      top: 23rem;
-      left: 0rem;
-      color: #fff; }
-      header .h_right .balls li:nth-child(3) span {
-        position: absolute;
-        top: 37%;
-        left: 20%;
-        font-size: 18px;
-        font-weight: bold; }
-    header .h_right .balls li:nth-child(4) {
-      background-color: #fcec64;
-      width: 55px;
-      height: 55px;
-      top: 36rem;
-      left: 29rem;
-      color: #4466c9; }
-      header .h_right .balls li:nth-child(4) span {
-        position: absolute;
-        top: 26%;
-        left: 22%;
-        font-size: 18px;
-        font-weight: bold; }
-  header .wrapper {
-    text-align: center; }
-    header .wrapper .down {
+    .main .wrapper .down {
       background-image: url("../img/Shape 1 copy.png");
       background-repeat: no-repeat;
       border: none;
@@ -130,7 +72,7 @@ header {
       width: 54px;
       height: 53px;
       margin-top: 4rem; }
-      header .wrapper .down a {
+      .main .wrapper .down a {
         width: 42px;
         height: 47px;
         display: block; }
@@ -188,62 +130,36 @@ header {
   margin-top: 190px;
   text-align: center; }
 #features .screen {
-  position: relative;
   margin-bottom: 27rem; }
   #features .screen .left img {
-    position: absolute;
-    z-index: -1; }
-  #features .screen .left .bg_img {
-    left: 11rem; }
-  #features .screen .left .bubbles .bubble_1,
-  #features .screen .left .bubbles .bubble_2 {
-    border-radius: 50%;
-    position: absolute;
-    width: 92px;
-    height: 92px;
-    color: #fff;
-    text-align: center;
-    line-height: 89px;
-    font-weight: bold; }
-  #features .screen .left .bubbles .bubble_1 {
-    background: #fcec64;
-    top: 13rem;
-    left: 16rem;
-    font-size: 18px; }
-  #features .screen .left .bubbles .bubble_2 {
-    background: #6ca3ff;
-    top: 24rem;
-    left: -3rem;
-    font-size: 30px; }
+    width: 100%; }
   #features .screen .right {
-    margin-top: 6rem; }
-    #features .screen .right .screen_desc {
-      margin-bottom: 3rem; }
-      #features .screen .right .screen_desc h3 {
-        margin: 3rem 0;
-        text-align: left; }
-      #features .screen .right .screen_desc p {
-        font-size: 24px; }
-      #features .screen .right .screen_desc .circles {
-        position: relative;
-        margin-top: 6rem; }
-        #features .screen .right .screen_desc .circles .circle {
-          width: 60px;
-          height: 60px;
-          line-height: 55px;
-          text-align: center;
-          border-radius: 50%;
-          border: 2px solid #f5f5f5;
-          box-shadow: 0px 0px 18px 3px #f0f0f0;
-          color: #b3b3b3;
-          position: absolute;
-          background: #fff; }
-          #features .screen .right .screen_desc .circles .circle:nth-child(1) {
-            left: 80px; }
-          #features .screen .right .screen_desc .circles .circle:nth-child(2) {
-            left: 30px; }
-          #features .screen .right .screen_desc .circles .circle:nth-child(3) {
-            left: -14px; }
+    padding-top: 22%; }
+    #features .screen .right .screen_desc h3 {
+      margin: 3rem 0;
+      text-align: left; }
+    #features .screen .right .screen_desc p {
+      font-size: 24px; }
+    #features .screen .right .screen_desc .circles {
+      position: relative;
+      margin-top: 6rem; }
+      #features .screen .right .screen_desc .circles .circle {
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid #f5f5f5;
+        box-shadow: 0px 0px 18px 3px #f0f0f0;
+        color: #b3b3b3;
+        position: absolute;
+        background: #fff; }
+        #features .screen .right .screen_desc .circles .circle:nth-child(1) {
+          left: 80px; }
+        #features .screen .right .screen_desc .circles .circle:nth-child(2) {
+          left: 30px; }
+        #features .screen .right .screen_desc .circles .circle:nth-child(3) {
+          left: -14px; }
 #features .screen2 img {
   z-index: 0; }
 #features .screen2 .left .bubbles .bubble_1 {
@@ -283,7 +199,11 @@ header {
     margin-left: 80%; }
 
 #download_app {
-  background: #648cff; }
+  background-image: url("../img/bg_app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -22em 0;
+  background-color: #648cff; }
   #download_app .how {
     margin: 21% 0;
     color: #fff; }
@@ -292,9 +212,10 @@ header {
     #download_app .how p {
       font-size: 18px;
       margin: 2rem 0;
-      width: 23rem; }
+      max-width: 33em; }
     #download_app .how .buttons {
-      display: flex; }
+      display: flex;
+      flex-wrap: wrap; }
       #download_app .how .buttons .button_1 {
         margin-right: 10px; }
   #download_app .how_phones img {
@@ -311,6 +232,8 @@ footer {
     justify-content: space-around;
     display: flex;
     list-style: none; }
+    footer .f_nav li {
+      margin-right: 1em; }
     footer .f_nav a {
       text-decoration: none;
       color: #b3b3b3; }

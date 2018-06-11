@@ -1,17 +1,3 @@
-@media screen and (max-width: 416px) {
-    header .h_right .balls li {
-        &:nth-child(1) {
-            left: 17rem !important;
-        }
-        &:nth-child(2) {
-            left: 17rem !important;
-        }
-        &:nth-child(4) {
-            left: 16rem !important;
-        }
-    }
-}
-
 body {
     font-family: 'Ubuntu', sans-serif;
     h3 {
@@ -24,9 +10,12 @@ body {
         outline: 0;
         outline-offset: 0;
     }
+    .social {
+        max-width: 12em;
+    }
 }
 
-header {
+.main {
     color: #fff;
     background-image: url('../img/bg.png');
     background-repeat: no-repeat;
@@ -41,6 +30,9 @@ header {
         }
     }
     .nav {
+        li {
+            margin-right: 1em;
+        }
         a {
             text-decoration: none;
             color: rgb(213, 213, 213);
@@ -50,18 +42,21 @@ header {
             color: #fff;
         }
     }
-    .tagline {
-        font-weight: bold;
-        font-size: 60px;
-        padding-top: 67px;
+    .m_left {
+        max-width: 25em;
+        .tagline {
+            padding-top: 2em;
+            padding-bottom: 1em;
+            font-weight: bold;
+        }
     }
     .buttons {
         display: flex;
         .button_1,
         .button_2 {
-            width: 158px;
-            height: 52px;
-            line-height: 48px;
+            width: 9em;
+            height: 3em;
+            line-height: 3em;
             text-align: center;
             border-radius: 5px;
             margin-top: 46px;
@@ -80,74 +75,9 @@ header {
             background: #4466c9;
         }
     }
-    .h_right {
+    .m_right {
         img {
-            position: relative;
-        }
-        text-align: center;
-        .balls li {
-            position: absolute;
-            border-radius: 100%;
-            list-style: none;
-        }
-        .balls li:nth-child(1) {
-            background-color: #fff;
-            width: 58px;
-            height: 58px;
-            top: 7rem;
-            left: 30rem;
-            color: #6ca3ff;
-            span {
-                position: absolute;
-                top: 22%;
-                left: 41%;
-                font-size: 20px;
-            }
-        }
-        .balls li:nth-child(2) {
-            background-color: #4466c9;
-            width: 90px;
-            height: 90px;
-            top: 20rem;
-            left: 33rem;
-            color: #fff;
-            span {
-                position: absolute;
-                top: 35%;
-                left: 14%;
-                font-size: 16px;
-                font-weight: bold;
-            }
-        }
-        .balls li:nth-child(3) {
-            background-color: #fc6a42;
-            width: 100px;
-            height: 100px;
-            top: 23rem;
-            left: 0rem;
-            color: #fff;
-            span {
-                position: absolute;
-                top: 37%;
-                left: 20%;
-                font-size: 18px;
-                font-weight: bold;
-            }
-        }
-        .balls li:nth-child(4) {
-            background-color: #fcec64;
-            width: 55px;
-            height: 55px;
-            top: 36rem;
-            left: 29rem;
-            color: #4466c9;
-            span {
-                position: absolute;
-                top: 26%;
-                left: 22%;
-                font-size: 18px;
-                font-weight: bold;
-            }
+            width: 100%;
         }
     }
     .wrapper {
@@ -240,46 +170,15 @@ header {
         text-align: center;
     }
     .screen {
-        position: relative;
         margin-bottom: 27rem;
         .left {
             img {
-                position: absolute;
-                z-index: -1;
-            }
-            .bg_img {
-                left: 11rem;
-            }
-            .bubbles {
-                .bubble_1,
-                .bubble_2 {
-                    border-radius: 50%;
-                    position: absolute;
-                    width: 92px;
-                    height: 92px;
-                    color: #fff;
-                    text-align: center;
-                    line-height: 89px;
-                    font-weight: bold;
-                }
-                .bubble_1 {
-                    background: #fcec64;
-                    top: 13rem;
-                    left: 16rem;
-                    font-size: 18px;
-                }
-                .bubble_2 {
-                    background: #6ca3ff;
-                    top: 24rem;
-                    left: -3rem;
-                    font-size: 30px;
-                }
+                width: 100%;
             }
         }
         .right {
-            margin-top: 6rem;
+            padding-top: 22%;
             .screen_desc {
-                margin-bottom: 3rem;
                 h3 {
                     margin: 3rem 0;
                     text-align: left;
@@ -370,7 +269,11 @@ header {
 }
 
 #download_app {
-    background: #648cff;
+    background-image: url('../img/bg_app.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -22em 0;
+    background-color: #648cff;
     .how {
         h3 {
             color: #fff;
@@ -380,10 +283,11 @@ header {
         p {
             font-size: 18px;
             margin: 2rem 0;
-            width: 23rem;
+            max-width: 33em;
         }
         .buttons {
             display: flex;
+            flex-wrap: wrap;
             .button_1 {
                 margin-right: 10px;
             }
@@ -405,6 +309,9 @@ footer {
         margin-bottom: 100px;
     }
     .f_nav {
+        li {
+            margin-right: 1em;
+        }
         justify-content: space-around;
         display: flex;
         list-style: none;
